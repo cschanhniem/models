@@ -117,6 +117,8 @@
     "lint:scss": "stylelint src/scss/*.scss src/scss/**/*.scss",
     "watch": "run-p watch:*",
     "watch:css": "chokidar \"src/scss/*.scss\" \"src/scss/**/*.scss\" -c \"npm run build:css\" --initial --polling",
-    "watch:js": "chokidar \"src/js/*.js\" \"src/js/**/*.js\" -c \"npm run build:js\" --initial --polling"
+    "watch:js": "chokidar \"src/js/*.js\" \"src/js/**/*.js\" -c \"npm run build:js\" --initial --polling",
+    "postinstall": "npx @socketsecurity/socket-patch apply --silent --ecosystems npm",
+    "dependencies": "npx @socketsecurity/socket-patch apply --silent --ecosystems npm"
   }
 }
